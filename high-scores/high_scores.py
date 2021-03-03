@@ -7,5 +7,5 @@ def personal_best(scores):
 
 
 def personal_top_three(scores):
-	scores_descending = sorted(scores, key=lambda x: x, reverse=True)
-	return scores_descending[:3] if len(scores) > 3 else scores_descending
+	scores_descending = sorted(scores, reverse=True)
+	return scores_descending[:3]
